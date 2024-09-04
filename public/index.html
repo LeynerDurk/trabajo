@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>BlockChain</title>
+  </head>
+  <body>
+    <div class="flex">
+      <div class="w-2/4">
+        <img src="./img/jugador.jpg" alt="Imagen de Jugador" />
+      </div>
+
+      <div class="flex-1">
+        <h1 class="text-4xl font-bold text-center">
+          ¡Registro de Información Deportiva!
+        </h1>
+
+        <form action="" method="POST">
+          <fieldset class="my-5">
+            <legend class="font-bold capitalize text-xl uppercase">
+              Datos Personales
+            </legend>
+
+            <div class="flex flex-col my-3">
+              <label class="font-bold capitalize" for="nombre">Nombre:</label>
+              <input
+                class="p-1 border border-gray-500 rounded capitalize"
+                type="text"
+                placeholder="Ingresa el Nombre"
+                id="nombre"
+                name="nombre"
+              />
+            </div>
+
+            <div class="flex flex-col my-3">
+              <label class="font-bold capitalize" for="fecha_nacimiento"
+                >Fecha de Nacimiento:</label
+              >
+              <input
+                class="p-1 border border-gray-500 rounded"
+                type="date"
+                id="fecha_nacimiento"
+                name="fecha_nacimiento"
+              />
+            </div>
+
+            <div class="flex flex-col my-3">
+              <label class="font-bold capitalize" for="lugar_nacimiento"
+                >Lugar de Nacimiento:</label
+              >
+              <input
+                class="p-1 border border-gray-500 rounded capitalize"
+                type="text"
+                placeholder="Ingresa el Lugar de Nacimiento"
+                id="lugar_nacimiento"
+                name="lugar_nacimiento"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset class="my-5">
+            <legend class="font-bold capitalize text-xl uppercase">
+              Datos Físico
+            </legend>
+
+            <div class="flex flex-col my-3">
+              <label class="font-bold capitalize" for="altura">Altura:</label>
+              <input
+                class="p-1 border border-gray-500 rounded capitalize"
+                type="text"
+                placeholder="Ingresa la altura"
+                id="altura"
+                name="altura"
+              />
+            </div>
+
+            <div class="flex flex-col my-3">
+              <label class="font-bold capitalize" for="peso">Peso:</label>
+              <input
+                class="p-1 border border-gray-500 rounded capitalize"
+                type="text"
+                placeholder="Ingresa el peso"
+                id="peso"
+                name="peso"
+              />
+            </div>
+
+            <div class="flex flex-col my-3">
+              <label class="font-bold capitalize" for="posicion"
+                >Posición en el Campo:</label
+              >
+              <input
+                class="p-1 border border-gray-500 rounded capitalize"
+                type="text"
+                placeholder="Ingresa el posicion"
+                id="posicion"
+                name="posicion"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset class="my-5">
+            <legend class="font-bold capitalize text-xl uppercase">
+              Historial Deportivo - Estadíticas de Partidos
+            </legend>
+
+            <div class="flex flex-col my-3">
+              <label class="font-bold capitalize" for="goles">Goles:</label>
+              <input
+                class="p-1 border border-gray-500 rounded capitalize"
+                type="text"
+                placeholder="Cantidad de Goles"
+                id="goles"
+                name="goles"
+              />
+            </div>
+
+            <div class="flex flex-col my-3">
+              <label class="font-bold capitalize" for="asistencias"
+                >Asistencias:</label
+              >
+              <input
+                class="p-1 border border-gray-500 rounded capitalize"
+                type="text"
+                placeholder="Cantidad de Asistencias"
+                id="asistencias"
+                name="asistencias"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset class="my-5">
+            <legend class="font-bold capitalize text-xl uppercase">
+              Pruebas Físicas
+            </legend>
+
+            <div class="flex flex-col my-3">
+              <label class="font-bold capitalize" for="test_velocidad"
+                >Resultado de Test de Velocidad:</label
+              >
+              <input
+                class="p-1 border border-gray-500 rounded capitalize"
+                type="text"
+                placeholder="Resultado de test de velocidad"
+                id="test_velocidad"
+                name="test_velocidad"
+              />
+            </div>
+
+            <div class="flex flex-col my-3">
+              <label class="font-bold capitalize" for="test_resistencia"
+                >Resultado de Test de Resistencia (Test de Cooper):</label
+              >
+              <input
+                class="p-1 border border-gray-500 rounded capitalize"
+                type="text"
+                placeholder="Resultado de Test de Resistencia"
+                id="test_resistencia"
+                name="test_resistencia"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset class="my-5">
+            <legend class="font-bold capitalize text-xl uppercase">
+              Historia Medico
+            </legend>
+            <div class="flex flex-col my-3">
+              <label class="font-bold capitalize" for="lesiones"
+                >Lesiones previas:</label
+              >
+              <input
+                class="p-1 border border-gray-500 rounded capitalize"
+                type="text"
+                placeholder="Ingresa Lesiones Previas del Jugador"
+                id="lesiones"
+                name="lesiones"
+              />
+            </div>
+
+            <div class="flex flex-col mt-3">
+              <label class="font-bold capitalize" for="alergias"
+                >Alergias o condicion es médicas relevantes</label
+              >
+              <input
+                class="p-1 border border-gray-500 rounded capitalize"
+                type="text"
+                placeholder="Ingresa Alergias del Jugador"
+                id="alergias"
+                name="alergias"
+              />
+            </div>
+          </fieldset>
+
+          <button
+            type="submit"
+            class="bg-indigo-500 p-2 text-white font-bold rounded rounded-md my-5 hover:bg-indigo-600"
+          >
+            Registrar Información
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
